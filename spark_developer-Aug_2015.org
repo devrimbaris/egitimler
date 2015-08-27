@@ -1,0 +1,30 @@
+#+STARTUP: indent
+
+* spark arayuz [[http://localhost:4040/stages/]]
+* scala
+  ** operatorleri degistirmeye izin veriyor
+  ** spark-shell ile ulasilir
+  ** val(sabit) ve var(degisken) ayrimi
+  ** recursive fonksiyonlarda tanimlamada donus tipi zorunlu
+* paralel calisma ayarlari icin dynamicAllocation kullaniliyor [[http://spark.apache.org/docs/latest/configuration.html#dynamic-allocation][link]]
+** spark.scheduler.mode FAIR olacak
+
+* take() kafasina gore getirir sirasina bakmaz
+* spark RDD arasi donusumleri optimize ederek birlestirebiliyor
+* scala ve python tutorials [[http://www.tutorialspoint.com/python/python_numbers.htm][link]]
+* pyspark %paste ile clipboard paste ediliyor (indentation korunarak)
+* resultiterable icin list kullanarak materialize edebilirsin ->list(res)
+* /etc/spark/conf/log4j.properties kullanarak log ayarlarini degistir
+* hdfs
+  ** random readleri destekliyor
+* spark standalone web ui 18080 18081
+* shuffle islemleri bir stageden digerine gecisi tetikler
+* spark multi user http://rnowling.github.io/spark/2015/04/07/multiuser-spark-mesos.html
+* map partition -> [[http://www.bfordata.com/spark/spark-recipe-1-mappartitions/][link1]] 
+* dstream = Discretized STREAM
+* stream - foreachRDD driver tarafinda calisiyor
+* vcore sanal bir hesaplama gercekten core a karsilik gelmiyor
+* RDD.partitions metodu kac partition oldugunu ve listesini veriyor
+* spark jobs server
+  
+
